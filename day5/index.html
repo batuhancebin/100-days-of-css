@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="center">
+        <div class="header">
+          <div class="header-left">
+            <div class="header-title">WEEKLY REPORT</div>
+            <div class="header-dates">01. Feb - 07. Feb</div>
+          </div>
+          <div class="header-right">
+            <div class="header-revenue">Revenue</div>
+            <div class="header-revenue-value">$ 3621.79</div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-line views-color"></div>
+              <div class="views-desc">Views</div>
+            </div>
+            <div class="legend-item">
+              <div class="legend-line purchases-color"></div>
+              <div class="purchases-desc">Purchases</div>
+            </div>
+          </div>
+
+          <svg id="chart" height="82">
+            <path d="M 10 1 H 270" stroke="#F2F2F2" stroke-width="1" />
+            <path d="M 10 41 H 270" stroke="#F2F2F2" stroke-width="1" />
+            <path d="M 10 81 H 270" stroke="#F2F2F2" stroke-width="1" />
+          </svg>
+
+          <div class="days">
+            <span class="day">MON</span>
+            <span class="day">TUE</span>
+            <span class="day">WED</span>
+            <span class="day">THU</span>
+            <span class="day">FRI</span>
+            <span class="day">SAT</span>
+            <span class="day">SUN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

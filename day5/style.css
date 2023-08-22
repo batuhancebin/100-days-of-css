@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42a7a1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 220px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: #f1ba64;
+  height: 60px;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  color: white;
+  padding: 12px 15px;
+  justify-content: space-between;
+}
+
+.header-revenue-value,
+.header-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header-revenue,
+.header-dates {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.header-right {
+  text-align: right;
+  align-self: center;
+}
+
+.legend {
+  padding: 10px 10px 14px;
+  display: flex;
+  font-size: 9px;
+  color: #606060;
+  line-height: 13px;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-line {
+  width: 12px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.views-color {
+  background-color: #fa7373;
+  fill: #fa7373;
+  stroke: #fa7373;
+}
+
+.purchases-color {
+  background-color: #7ba2ff;
+  fill: #7ba2ff;
+  stroke: #7ba2ff;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 9px;
+  line-height: 30px;
+}
+
+.day {
+  text-align: center;
+}
